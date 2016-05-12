@@ -18,9 +18,13 @@ module.exports = function(grunt) {
         "src" : "src/plugins/Easyscript/*.js",
         "dest" : "js/plugins/EasyScript.js"
       },
-      "NwesLoader" : {
+      "NewsLoader" : {
         "src" : "src/plugins/Newsloader/*.js",
         "dest" : "js/plugins/Newsloader.js"
+      },
+      "Programmable" : {
+        "src" : ["src/plugins/Programmable/Programmable.js","src/plugins/Programmable/*.js","!src/plugins/Programmable/Raetsel.js","src/plugins/Programmable/Raetsel.js"],
+        "dest" : "js/plugins/Programmable.js"
       }
     },
     connect: {
